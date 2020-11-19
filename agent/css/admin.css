@@ -1,0 +1,522 @@
+@charset "utf-8";
+ul, li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    background: url(../images/admin_black_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
+}
+
+td {
+    font-size: 13px
+}
+
+img {
+    border: 0;
+}
+
+input text {
+    height: 22px;
+    color: #000;
+}
+
+.table_header {
+    background-color: #400000;
+    color: #ffffff;
+    height: 28px;
+}
+
+.table_list {
+    font-size: 12px;
+    border: 1px solid #999999;
+    border-collapse: collapse;
+}
+
+.table_list td {
+    border: 1px solid #999999;
+    height: 28px;
+    padding: 2px
+}
+
+.table_list table td {
+    border: 1px solid #999999;
+}
+
+.table_result_list {
+    font-size: 12px;
+    border: 1px solid #999999;
+    border-collapse: collapse;
+}
+
+.table_result_list td {
+    border: 1px solid #999999;
+    height: 42px;
+    padding-right: 5px
+}
+
+.table_result_list table td {
+    border: 0px solid #999999;
+}
+
+.table_list_tr_bglight {
+    background-color: #ffffff;
+}
+
+.table_list_tr_bgdack {
+    background-color: #D2B5B3;
+}
+
+.table_list_tr_stop {
+    background-color: #FF99CC;
+}
+
+.table_list_tr_stop_login {
+    background-color: #CCCCCC;
+}
+
+.table_list2 {
+    font-size: 12px;
+    border: 1px solid #999999;
+    border-collapse: collapse;
+}
+
+.table_list2 td {
+    border: 1px solid #999999;
+    height: 28px;
+    padding-right: 5px;
+    padding-left: 5px
+}
+
+.table_list2 table td {
+    border: 1px solid #999999;
+    text-align: center
+}
+
+.table_footer {
+    background-color: #efefef;
+    color: #000000;
+    height: 128px;
+}
+
+/*****后台******/
+.center_bg {
+    background: url(../images/center_bg.jpg) top center no-repeat;
+}
+
+#user {
+    padding: 5px 0px;
+    background: #ffffff;
+    width: 226px;
+    height: 22px;
+    font-size: 12px;
+    color: #000;
+    border: 1px #b2a569 solid;
+}
+
+#passport {
+    padding: 5px 0px;
+    background: #ffffff;
+    height: 22px;
+    width: 226px;
+    font-size: 12px;
+    color: #000;
+    border: 1px #b2a569 solid;
+}
+
+.green_line {
+    background: url(../images/green_line.jpg) left top repeat-x;
+}
+
+.time {
+    font-size: 12px;
+    color: #555555;
+    text-decoration: none;
+}
+
+a:hover.time {
+    color: #C00;
+    text-decoration: underline;
+}
+
+.nav, .nav ul {
+    width: 715px;
+    height: 26px;
+    color: #fff
+}
+
+.nav ul li {
+    float: left;
+    width: 82px;
+    margin-right: 1px;
+    height: 26px;
+    color: #ffffff;
+    font-size: 12px;
+    background: #ccc;
+    color: #fff
+}
+
+.nav ul li a {
+    display: block;
+    width: 82px;
+    background: url(../images/blue_button.jpg) left top no-repeat;
+    line-height: 26px;
+    color: #fff
+}
+
+.nav ul li a:hover {
+    width: 82px;
+    background: url(../images/green_button.jpg) left top no-repeat;
+    line-height: 26px;
+    cursor: hand;
+    color: #fff
+}
+
+.nav ul .select a {
+    display: block;
+    width: 82px;
+    background: url(../images/green_button.jpg) left top no-repeat;
+    line-height: 26px;
+    color: #fff
+}
+
+.yhm {
+    background: url(../images/yhm.jpg) center top no-repeat;
+}
+
+.yzm {
+    background: url(../images/yzm.jpg) center top no-repeat;
+}
+
+.mm {
+    background: url(../images/mm.jpg) center top no-repeat;
+}
+
+.gz_icon {
+    background: url(../images/gz_icon.jpg) center top no-repeat;
+}
+
+.login_icon {
+    background: url(../images/login_icon.jpg) center top no-repeat;
+}
+
+.sz_bg {
+    background: url(../images/sz_bg.jpg) left center no-repeat;
+    width: 32px;
+    line-height: 32px;
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.zm_bg {
+    background: url(../images/zm_bg.jpg) left center no-repeat;
+    width: 32px;
+    line-height: 32px;
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.ht_title {
+    background: url(../images/login_title_xc666.jpg) top center no-repeat;
+    margin-left: 22px;
+}
+
+.table_list_tr_hour {
+    background-color: #FFFF84;
+    color: #000;
+    border-left: 1px solid #C1DAD7;
+}
+
+.Bf21b {
+    text-align: center;
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: Arial
+}
+
+.BPeriod {
+    text-align: center;
+    color: #000000;
+}
+
+table.highlightTable tr.highlightAlt td {
+    background-color: #EEEEEE;
+}
+
+/****后台****/
+
+.manage_title {
+    background: url(../images/title_xc666.jpg) top center no-repeat;
+}
+
+.yellow_nav_bg {
+    background: url(../images/yellow_bg.jpg) top right no-repeat;
+}
+
+.yellow_nav {
+    font-size: 13px;
+    color: #6a520a;
+    text-decoration: none;
+}
+
+a:hover.yellow_nav {
+    text-decoration: underline;
+    color: #C00;
+}
+
+.green_line {
+    background: url(../images/green_line.jpg) left top repeat-x;
+}
+
+.blue_line {
+    background: url(../images/blue_line.jpg) left top repeat-x;
+}
+
+.gray_bg {
+    background: url(../images/gray_bg.jpg) left top repeat-x;
+}
+
+.gray_bg_02 {
+    background: url(../images/gray_bg_02.jpg) left top repeat-x;
+}
+
+.time {
+    color: #555555;
+    font-size: 12px;
+}
+
+.login_text {
+    color: #555555;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+a:hover.login_text {
+    color: #C00;
+    text-decoration: underline;
+}
+
+.red_text {
+    color: #C00;
+    font-size: 14px;
+}
+
+#textfield {
+    line-height: 28px;
+    border: 1px solid #cccccc;
+}
+
+/*****表格****/
+.blue_text {
+    color: #014990;
+    font-size: 12px;
+}
+
+.table_blue {
+    border: 1px solid #a8d7ea;
+    border-right: none;
+    border-bottom: none;
+}
+
+.table_blue tr td {
+    border-right: 1px solid #a8d7ea;
+    border-bottom: 1px solid #a8d7ea;
+}
+
+.ball_title {
+    background: url(../images/ball_title_bg.jpg) left top repeat-x;
+}
+
+.eng_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/*****樂透球****/
+.blue_ball_list {
+    float: left;
+    width: 500px;
+    overflow: hidden;
+    margin-left: -25px;
+}
+
+.blue_ball_list ul {
+    width: 500px;
+    overflow: hidden;
+}
+
+.blue_ball_list ul li {
+    display: block;
+    margin-right: 2px;
+    margin-bottom: 4px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    background: url(../images/blue_ball.jpg) top center no-repeat;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.red_ball {
+    background: url(../images/red_ball.jpg) top center no-repeat;
+    width: 62px;
+    height: 62px;
+    line-height: 62px;
+    color: #ffffff;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.green_ball_list {
+    float: left;
+    width: 500px;
+    overflow: hidden;
+    margin-left: -25px;
+}
+
+.green_ball_list ul {
+    width: 500px;
+    overflow: hidden;
+}
+
+.green_ball_list ul li {
+    display: block;
+    margin-right: 2px;
+    margin-bottom: 4px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    background: url(../images/green_ball.jpg) top center no-repeat;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.red_ball_02 {
+    background: url(../images/red_ball_02.jpg) top center no-repeat;
+    width: 62px;
+    height: 62px;
+    line-height: 62px;
+    color: #ffffff;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.select_percent {
+    width: 65px;
+    display: inline;
+    overflow: hidden;
+}
+
+.money {
+    width: 65px;
+}
+
+fieldset {
+    width: 97%;
+    border-color: #FF9900
+}
+
+.btn_l {
+    display: block;
+    width: 120px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    margin-right: 200px;
+    display: inline;
+    overflow: hidden;
+    margin-right: 6px;
+    background: url(http://xc888.top/img/btn_link.png) no-repeat;
+    color: #fff;
+    letter-spacing: 0.2em;
+    background: url(../images/btn_link.png) no-repeat;
+}
+
+.btn_s {
+    display: block;
+    width: 50px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    margin-right: 200px;
+    display: inline;
+    overflow: hidden;
+    margin-right: 6px;
+    background: url(/img/btn_link_b.png) no-repeat;
+    color: #fff;
+    letter-spacing: 0.2em;
+    background: url(../images/btn_link.png) no-repeat;
+}
+
+
+/**左侧导航 開始**/
+.side-nav-td{
+    background-image: url("http://xc888.top/images/nav.png");
+    background-position: left;
+    background-repeat: repeat-y;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    position: relative; z-index: 99;
+    box-sizing: border-box; padding-top: 10px;
+}
+.side-nav-td ul,.side-nav-td li{ list-style: none; padding: 0; margin: 0;}
+.side-nav-td .ag-logo{ margin: 10px; text-align: center;}
+.side-nav-td .ag-logo img{ display: inline-block; width: 100%;}
+.side-nav-td .side-nav{
+    margin: 0 10px;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: #7e8596 0 0 1px;
+    -moz-box-shadow: #7e8596 0 0 1px;
+    box-shadow: #7e8596 0 0 1px;
+    border: 1px solid #15161a
+}
+
+.side-nav-td .side-nav li a {
+    color: #f4f4f4;
+    font-size: 12px;
+    border-bottom: 1px solid #090a0c;
+    border-top: 1px solid #40454f;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #373b44), color-stop(100%, #2c2f36));
+    background-image: -webkit-linear-gradient(#373b44,#2c2f36);
+    background-image: -moz-linear-gradient(#373b44,#2c2f36);
+    background-image: -o-linear-gradient(#373b44,#2c2f36);
+    background-image: linear-gradient(#373b44,#2c2f36)
+}
+
+.side-nav-td .side-nav li a:hover {
+    border-top-color: #525866;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494f5b), color-stop(100%, #353941));
+    background-image: -webkit-linear-gradient(#494f5b,#353941);
+    background-image: -moz-linear-gradient(#494f5b,#353941);
+    background-image: -o-linear-gradient(#494f5b,#353941);
+    background-image: linear-gradient(#494f5b,#353941)
+}
+.side-nav-td .side-nav li a i,
+.side-nav-td .side-nav li a span{
+    display: inline-block; height: 16px; line-height: 16px; font-size: 14px;
+}
+.side-nav-td .side-nav li a i{ width: 24px; text-align: center; }
+.side-nav-td .side-nav li a  span{ margin-left: 5px;}
+/**左侧导航 結束**/

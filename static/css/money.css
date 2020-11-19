@@ -1,0 +1,64 @@
+.moneyList .list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.moneyList .list_item {
+    width: 33.33333%;
+    padding: 1em;
+    margin-bottom: 2em
+}
+
+.moneyList .list_img {
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+    max-width: 35vw
+}
+
+.moneyList .list_img img {
+    width: 200px;
+    max-width: 100%
+}
+
+.moneyList .list_link {
+    text-align: center;
+    display: block;
+    transition: .3s
+}
+
+.moneyList .list_link:hover {
+    transform: scale(1.1)
+}
+
+.moneyList .list_text {
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto
+}
+
+.moneyList .list_text span {
+    flex: auto;
+    width: auto;
+    display: inline-block;
+    background: #b90000;
+    color: #fcee21;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0 10px;
+    line-height: 1.5;
+    margin: 3px;
+    white-space: nowrap
+}
+
+@media (max-width:800px) and (orientation:portrait) {
+    .moneyList .list_item {
+        padding: 5px
+    }
+}

@@ -1,0 +1,320 @@
+/*
+用法:
+載入本CSS檔
+<link href="/css/yldu_form1.css" rel="stylesheet">
+
+已有功能
+radio :
+	自訂單多選框樣式1
+
+select :
+	Select1
+*/
+
+/*
+start yldu 自訂單選框樣式1 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+使用方式 :
+<div class="abgne-menu-20140101-1">
+	<input type="radio" id="male" name="sex">
+	<label for="male">男性</label>
+
+	<input type="radio" id="female" name="sex">
+	<label for="female">女性</label>
+
+	<input type="radio" id="other" name="sex">
+	<label for="other">其它</label>
+</div>
+
+*/
+/*紅灰色*/
+.abgne-menu-20140101-1 input[type="radio"]
+{
+	display: none;
+}
+.abgne-menu-20140101-1 input[type="radio"] + label
+{
+	display: inline-block;
+	background-color: #ccc;
+	cursor: pointer;
+	padding: 5px 10px;
+	border:1px solid #33F;
+	border-radius:10px;
+}
+
+.abgne-menu-20140101-1 input[type="radio"]:checked + label
+{
+	background-color: #f00;
+	color: #fff;
+	border-radius:10px;
+}
+
+/* Start yldu Radio 藍灰色 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+.abgne-menu-20140101-1b input[type="radio"]
+{
+	display: none;
+}
+.abgne-menu-20140101-1b input[type="radio"] + label
+{
+	display: inline-block;
+	background-color: #ccc;
+	cursor: pointer;
+	padding: 5px 10px;
+	border:1px solid #33F;
+	border-radius:10px;
+}
+
+.abgne-menu-20140101-1b input[type="radio"]:checked + label
+{
+	background-color: #00f;
+	color: #fff;
+}
+/* End yldu Radio 藍灰色 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲*/
+
+/* Start yldu Radio 藍框_白底_圓角 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+.abgne-menu-B_W_C input[type="radio"]
+{
+	display: none;
+}
+.abgne-menu-B_W_C input[type="radio"] + label
+{
+	display: inline-block;
+	background-color: #fff;
+	cursor: pointer;
+	padding: 5px 10px;
+	border:1px solid #33F;
+	border-radius:10px;
+}
+
+.abgne-menu-B_W_C input[type="radio"]:checked + label
+{
+	background-color:#39F ;
+	color: #fff;
+}
+/* End yldu Radio 藍框_白底_圓角 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲*/
+
+/* end yldu 自訂單多選框樣式1 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲*/
+
+
+/* Start yldu 自訂多選框樣式1 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+使用方式 :
+<h3>專長(多選)</h3>
+<div class="abgne-menu-20140101-2">
+	<input type="checkbox" id="jquery" name="skill" checked>
+	<label for="jquery">jQuery</label>
+
+	<input type="checkbox" id="css3" name="skill">
+	<label for="css3">CSS3</label>
+
+	<input type="checkbox" id="html5" name="skill">
+	<label for="html5">HTML5</label>
+
+	<input type="checkbox" id="angularjs" name="skill">
+	<label for="angularjs">AngularJS</label>
+</div>
+
+*/
+
+.abgne-menu-20140101-2 input[type="checkbox"]
+{
+	display: none;
+}
+.abgne-menu-20140101-2 input[type="checkbox"] + label
+{
+	display: inline-block;
+	background-color: #ccc;
+	cursor: pointer;
+	padding: 5px 10px;
+}
+.abgne-menu-20140101-2 input[type="checkbox"]:checked + label
+{
+	background-color: #f3d42e;
+}
+
+.abgne-menu-20140101-2b input[type="checkbox"]
+{
+	display: none;
+}
+.abgne-menu-20140101-2b input[type="checkbox"] + label
+{
+	display: inline-block;
+	background-color: #ccc;
+	cursor: pointer;
+	padding: 5px 10px;
+}
+.abgne-menu-20140101-2b input[type="checkbox"]:checked + label
+{
+	background-color: #00f;
+	color:#fff;
+}
+
+/* end yldu 自訂多選框樣式1 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲*/
+
+/*
+按鈕 :
+start yldu Select1
+
+<div>加入類別或ID
+ class="styled-select slate"			灰色按鈕,白色字
+ class="styled-select black rounded"	全圓角黑色,白色字
+ class="styled-select green rounded"	全圓角綠色,白色字
+ class="styled-select blue semi-square"	圓角藍色,白色字
+ class="styled-select yellow rounded"	圓角黃色,黑色字
+<div id="mainselection">				全圓角綠色陰影
+<select id="soflow">					全灰
+<select id="soflow-color">				全圓角綠色
+範例:
+<div class="要加的class">
+  <select>
+    <option>Here is the first option</option>
+    <option>The second option</option>
+    <option>The third option</option>
+  </select>
+</div>
+
+*/
+.styled-select
+{
+	background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+	height: 29px;
+	overflow: hidden;
+	width: 240px;
+}
+.styled-select select
+{
+	background: transparent;
+	border: none;
+	font-size: 14px;
+	height: 29px;
+	padding: 5px;
+	/* If you add too much padding here, the options won't show in IE */
+	width: 268px;
+}
+.styled-select.slate
+{
+	background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+	height: 34px;
+	width: 240px;
+}
+.styled-select.slate select
+{
+	border: 1px solid #ccc;
+	font-size: 16px;
+	height: 34px;
+	width: 268px;
+}
+/* -------------------- Rounded Corners */
+.rounded
+{
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.semi-square
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+/* -------------------- Colors: Background */
+.slate
+{
+	background-color: #ddd;
+}
+.green
+{
+	background-color: #779126;
+}
+.blue
+{
+	background-color: #3b8ec2;
+}
+.yellow
+{
+	background-color: #eec111;
+}
+.black
+{
+	background-color: #000;
+}
+/* -------------------- Colors: Text */
+.slate select
+{
+	color: #000;
+}
+.green select
+{
+	color: #fff;
+}
+.blue select
+{
+	color: #fff;
+}
+.yellow select
+{
+	color: #000;
+}
+.black select
+{
+	color: #fff;
+}
+/* -------------------- Select Box Styles: danielneumann.com Method */
+/* -------------------- Source: http://danielneumann.com/blog/how-to-style-dropdown-with-css-only/ */
+#mainselection select
+{
+	border: 0;
+	color: #EEE;
+	background: transparent;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 2px 10px;
+	width: 378px;
+	*width: 350px;
+	*background: #58B14C;
+	-webkit-appearance: none;
+}
+#mainselection
+{
+	overflow: hidden;
+	width: 350px;
+	-moz-border-radius: 9px 9px 9px 9px;
+	-webkit-border-radius: 9px 9px 9px 9px;
+	border-radius: 9px 9px 9px 9px;
+	box-shadow: 1px 1px 11px #330033;
+	background: #58B14C url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 319px center;
+}
+/* -------------------- Select Box Styles: stackoverflow.com Method */
+/* -------------------- Source: http://stackoverflow.com/a/5809186 */
+select#soflow,
+select#soflow-color
+{
+	-webkit-appearance: button;
+	-webkit-border-radius: 2px;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	-webkit-padding-end: 20px;
+	-webkit-padding-start: 2px;
+	-webkit-user-select: none;
+	background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+	background-position: 97% center;
+	background-repeat: no-repeat;
+	border: 1px solid #AAA;
+	color: #555;
+	font-size: inherit;
+	margin: 20px;
+	overflow: hidden;
+	padding: 5px 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 300px;
+}
+select#soflow-color
+{
+	color: #fff;
+	background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#779126, #779126 40%, #779126);
+	background-color: #779126;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding-left: 15px;
+}
+
+/*end yldu Select1*/

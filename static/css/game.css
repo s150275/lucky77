@@ -1,0 +1,1187 @@
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg)
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg)
+    }
+
+    20% {
+        transform: translate(-3px) rotate(1deg)
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg)
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg)
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg)
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg)
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg)
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg)
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg)
+    }
+
+    to {
+        transform: translate(1px, -2px) rotate(-1deg)
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0)
+    }
+
+    50% {
+        transform: translateY(5px)
+    }
+
+    to {
+        transform: translate(0)
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: translate(-50%, -50%)
+    }
+
+    50% {
+        transform: translate(-50%, -55%) rotate(180deg)
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(1turn)
+    }
+}
+
+@keyframes shadow {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(.9)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    to {
+        transform: translate(-50%, -50%) scale(0)
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1)
+    }
+}
+
+.bingoList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    margin: auto auto 1em
+}
+
+.bingoList_title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    background: #4c0006;
+    margin: 1px 0
+}
+
+.bingoList_item {
+    width: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1px
+}
+
+.bingoList .bingo_number,
+.bingoList .bingo_point {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5
+}
+
+.bingoList .bingo_number {
+    color: #000;
+    background: hsla(0, 0%, 100%, .8)
+}
+
+.bingoList .bingo_point {
+    background: rgba(252, 238, 33, .8);
+    color: #c1272d
+}
+
+.gameBlock .topBlock {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center
+}
+
+.gameBlock .leftBlock {
+    flex: 0 1 150px;
+    width: 150px;
+    min-width: 110px
+}
+
+.gameBlock .centerBlock {
+    flex: 1 0 120px
+}
+
+.gameBlock .rightBlock {
+    flex: 0 1 150px;
+    width: 150px;
+    min-width: 110px
+}
+
+.gameBlock .zoneTitle h4 {
+    margin-top: 40px;
+    margin-bottom: 0
+}
+
+.gameBlock .leftBlock .blockContent,
+.gameBlock .rightBlock .blockContent {
+    border: 1px solid #b90000;
+    padding: 5px;
+    border-radius: 5px;
+    min-height: 220px;
+    overflow: hidden
+}
+
+.gameBlock .leftBlock .blockContent p,
+.gameBlock .rightBlock .blockContent p {
+    margin-top: 0;
+    margin-bottom: 5px
+}
+
+.gameBlock .blockTitle {
+    background: #b90000;
+    border-radius: 5px;
+    font-size: 1.2em;
+    line-height: 1.3;
+    display: block;
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 10px
+}
+
+.gameBlock .countdownBlock {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/static/img/background_title.4e52777.png);
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    background-size: contain;
+    animation: move 1s;
+    animation-iteration-count: infinite;
+    margin: auto auto -40px
+}
+
+.gameBlock .countdownBlock .number {
+    font-size: 2rem;
+    color: #fcee21;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1
+}
+
+.gameBlock .countdownBlock .title {
+    display: block;
+    white-space: nowrap
+}
+
+.gameBlock .bonusBlock {
+    position: relative;
+    z-index: 1;
+    background-image: url(/static/img/background_bonus.c452aa5.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto auto -40px;
+    pointer-events: none
+}
+
+.gameBlock .bonusBlock .point {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.gameBlock .bonusBlock .point span {
+    display: inline-block;
+    padding: 5px .8em
+}
+
+.gameBlock .bonusBlock .point span:not(:last-child) {
+    border-right: 1px solid #fff
+}
+
+.gameBlock .bonusInfo {
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px
+}
+
+.gameBlock .bonusInfo[active] {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px
+}
+
+.gameBlock .bonusInfo .toggle {
+    position: absolute;
+    opacity: 0
+}
+
+.gameBlock .bottomBlock {
+    margin-top: 1em
+}
+
+.gameBlock .pointBlock {
+    margin: 2em auto 1em;
+    display: flex;
+    justify-content: space-between
+}
+
+.gameBlock .pointBlock strong {
+    color: #fcee21
+}
+
+.gameBlock .tableList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none
+}
+
+.gameBlock .tableList label {
+    display: block
+}
+
+.gameBlock .tableList_item {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2em
+}
+
+.gameBlock .tableList .space_checkbox {
+    position: absolute;
+    opacity: 0
+}
+
+.gameBlock .tableList .space_chair {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 139%;
+    background-image: url(/static/img/chair.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 110%
+}
+
+.gameBlock .tableList .space_chair:before {
+    content: "";
+    z-index: 0
+}
+
+.gameBlock .tableList .space_chair:before,
+.gameBlock .tableList .space_text {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.gameBlock .tableList .space_text {
+    width: 100%;
+    text-align: center;
+    line-height: 1
+}
+
+.gameBlock .tableList .space_chair[banker=true],
+.gameBlock .tableList .space_chair[checked=checked],
+.gameBlock .tableList .space_chair[other=true],
+.gameBlock .tableList .space_checkbox:checked+.space_chair {
+    background: transparent;
+    position: relative
+}
+
+.gameBlock .tableList .space_chair[banker=true]:before,
+.gameBlock .tableList .space_chair[checked=checked]:before,
+.gameBlock .tableList .space_chair[other=true]:before,
+.gameBlock .tableList .space_checkbox:checked+.space_chair:before {
+    border-radius: 100%;
+    width: 80%;
+    padding-bottom: 80%;
+    border: 2px solid #fff
+}
+
+@media (max-width:800px) and (orientation:portrait) {
+
+    .gameBlock .tableList .space_chair[banker=true],
+    .gameBlock .tableList .space_chair[checked=checked],
+    .gameBlock .tableList .space_chair[other=true],
+    .gameBlock .tableList .space_checkbox:checked+.space_chair {
+        letter-spacing: 0;
+        font-size: 10px
+    }
+
+    .gameBlock .tableList .space_chair[banker=true]:before,
+    .gameBlock .tableList .space_chair[checked=checked]:before,
+    .gameBlock .tableList .space_chair[other=true]:before,
+    .gameBlock .tableList .space_checkbox:checked+.space_chair:before {
+        border: 1px solid #fff
+    }
+}
+
+.gameBlock .tableList .space_chair[banker=true]:before {
+    background: #c1272d
+}
+
+.gameBlock .tableList .space_chair[other=true]:before {
+    background: #4c0006
+}
+
+.gameBlock .tableList .space_chair[checked=checked],
+.gameBlock .tableList .space_checkbox:checked+.space_chair {
+    color: #000
+}
+/*自己選位黃色球*/
+.gameBlock .tableList .space_chair[checked=checked]:before,
+.gameBlock .tableList .space_checkbox:checked+.space_chair:before {
+    background: linear-gradient(180deg, #f7931e, #fcee21 22%, #fbb03b)
+}
+
+
+.gameBlock .table_number {
+    letter-spacing: 0;
+    line-height: 1.5;
+    height: 1.5em;
+    display: block;
+    color: hsla(0, 0%, 100%, .85)
+}
+
+.gameBlock .ball_area {
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .3);
+    margin-bottom: 10px
+}
+
+.gameBlock .ball_point {
+    letter-spacing: 0;
+    display: block;
+    line-height: 1.5;
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0, 0, 0, .5);
+    overflow: hidden;
+    color: #fff
+}
+
+.gameBlock .ball_point span {
+    display: inline-block
+}
+
+.gameBlock .ball_point[point="1"],
+.gameBlock .ball_point[point="2"],
+.gameBlock .ball_point[point="3"],
+.gameBlock .ball_point[point="4"],
+.gameBlock .ball_point[point="5"],
+.gameBlock .ball_point[point="6"],
+.gameBlock .ball_point[point="7"] {
+    color: #fff
+}
+
+.gameBlock .ball_point[point="8"],
+.gameBlock .ball_point[point="9"] {
+    color: #fcee21
+}
+
+.gameBlock .ball_point[number="11"],
+.gameBlock .ball_point[number="22"],
+.gameBlock .ball_point[number="33"],
+.gameBlock .ball_point[number="44"],
+.gameBlock .ball_point[number="55"],
+.gameBlock .ball_point[number="66"],
+.gameBlock .ball_point[number="77"] {
+    color: #ff5f5f
+}
+
+.gameBlock .ball_number {
+    display: block;
+    position: relative;
+    padding-bottom: 100%;
+    background-size: 90%;
+    background-position: top;
+    background-repeat: no-repeat
+}
+
+.gameBlock .ball_number>span {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center
+}
+
+.gameBlock .ball_number:after,
+.gameBlock .ball_number:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    padding-bottom: 50%;
+    border-radius: 100%
+}
+
+.gameBlock .ball_number:before {
+    border-radius: 100%;
+    background: hsla(0, 0%, 100%, .7);
+    transform: translate(-50%, -65%) scale(1)
+}
+
+.gameBlock .ball_number:after {
+    border: 1px solid hsla(0, 0%, 100%, .7);
+    transform: translate(-50%, -65%) scale(1.1)
+}
+
+.gameBlock .table_space {
+    cursor: pointer
+}
+
+.gameBlock .tableList_item .ball_area {
+    position: relative
+}
+
+.gameBlock .tableList_item .ball_area:after,
+.gameBlock .tableList_item .ball_area:before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    width: 30%;
+    padding-bottom: 30%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    overflow: hidden;
+    animation: bounce 2s ease-in-out infinite
+}
+
+.gameBlock .tableList_item .ball_area:before {
+    left: 50%;
+    top: 30%;
+    background: #fcee21
+}
+
+.gameBlock .tableList_item .ball_area:after {
+    left: 50%;
+    top: 55%;
+    background: #f15a24;
+    animation-delay: -1s
+}
+
+.gameBlock .tableList_item .ball_number,
+.gameBlock .tableList_item .ball_number:after,
+.gameBlock .tableList_item .ball_number:before,
+.gameBlock .tableList_item .ball_number>span,
+.gameBlock .tableList_item .ball_point {
+    transition: .5s
+}
+
+.gameBlock .tableList_item .ball_number>span>span:first-child {
+    transition: 2s
+}
+
+.gameBlock .tableList_item .ball_number>span>span:nth-child(2) {
+    transition: 3s
+}
+
+.gameBlock .tableList_item .ball_point span {
+    transition: .3s ease-in-out
+}
+
+.gameBlock .tableList_item:nth-child(4n+1) .ball_number {
+    background-image: url(data:image/png;base64,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)
+}
+
+.gameBlock .tableList_item:nth-child(4n+2) .ball_number {
+    background-image: url(/static/img/ball-orange.99cb71e.png)
+}
+
+.gameBlock .tableList_item:nth-child(4n+3) .ball_number {
+    background-image: url(/static/img/ball-blue.b2e405e.png)
+}
+
+.gameBlock .tableList_item:nth-child(4n+4) .ball_number {
+    background-image: url(/static/img/ball-green.b69ca21.png)
+}
+
+.gameBlock .tableList_item:not([loading]) .ball_area:after,
+.gameBlock .tableList_item:not([loading]) .ball_area:before {
+    opacity: 0
+}
+
+.gameBlock .tableList_item:not([loading]) .ball_number,
+.gameBlock .tableList_item:not([loading]) .ball_point span {
+    transform: translateY(0)
+}
+
+.gameBlock .tableList_item:not([loading]):first-child .ball_number:after,
+.gameBlock .tableList_item:not([loading]):first-child .ball_number:before,
+.gameBlock .tableList_item:not([loading]):first-child .ball_number>span {
+    transition-delay: 0s
+}
+
+.gameBlock .tableList_item:not([loading]):first-child .ball_number>span>span:first-child {
+    transition-delay: .5s
+}
+
+.gameBlock .tableList_item:not([loading]):first-child .ball_number>span>span:nth-child(2) {
+    transition-delay: 3s
+}
+
+.gameBlock .tableList_item:not([loading]):first-child .ball_point span {
+    transition-delay: 5s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(2) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(2) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(2) .ball_number>span {
+    transition-delay: .3s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(2) .ball_number>span>span:first-child {
+    transition-delay: .8s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(2) .ball_number>span>span:nth-child(2) {
+    transition-delay: 3.3s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(2) .ball_point span {
+    transition-delay: 5.3s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(3) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(3) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(3) .ball_number>span {
+    transition-delay: .6s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(3) .ball_number>span>span:first-child {
+    transition-delay: 1.1s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(3) .ball_number>span>span:nth-child(2) {
+    transition-delay: 3.6s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(3) .ball_point span {
+    transition-delay: 5.6s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(4) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(4) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(4) .ball_number>span {
+    transition-delay: .9s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(4) .ball_number>span>span:first-child {
+    transition-delay: 1.4s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(4) .ball_number>span>span:nth-child(2) {
+    transition-delay: 3.9s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(4) .ball_point span {
+    transition-delay: 5.9s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(5) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(5) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(5) .ball_number>span {
+    transition-delay: 1.2s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(5) .ball_number>span>span:first-child {
+    transition-delay: 1.7s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(5) .ball_number>span>span:nth-child(2) {
+    transition-delay: 4.2s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(5) .ball_point span {
+    transition-delay: 6.2s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(6) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(6) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(6) .ball_number>span {
+    transition-delay: 1.5s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(6) .ball_number>span>span:first-child {
+    transition-delay: 2s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(6) .ball_number>span>span:nth-child(2) {
+    transition-delay: 4.5s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(6) .ball_point span {
+    transition-delay: 6.5s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(7) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(7) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(7) .ball_number>span {
+    transition-delay: 1.8s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(7) .ball_number>span>span:first-child {
+    transition-delay: 2.3s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(7) .ball_number>span>span:nth-child(2) {
+    transition-delay: 4.8s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(7) .ball_point span {
+    transition-delay: 6.8s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(8) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(8) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(8) .ball_number>span {
+    transition-delay: 2.1s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(8) .ball_number>span>span:first-child {
+    transition-delay: 2.6s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(8) .ball_number>span>span:nth-child(2) {
+    transition-delay: 5.1s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(8) .ball_point span {
+    transition-delay: 7.1s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(9) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(9) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(9) .ball_number>span {
+    transition-delay: 2.4s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(9) .ball_number>span>span:first-child {
+    transition-delay: 2.9s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(9) .ball_number>span>span:nth-child(2) {
+    transition-delay: 5.4s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(9) .ball_point span {
+    transition-delay: 7.4s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(10) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(10) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(10) .ball_number>span {
+    transition-delay: 2.7s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(10) .ball_number>span>span:first-child {
+    transition-delay: 3.2s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(10) .ball_number>span>span:nth-child(2) {
+    transition-delay: 5.7s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(10) .ball_point span {
+    transition-delay: 7.7s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(11) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(11) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(11) .ball_number>span {
+    transition-delay: 3s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(11) .ball_number>span>span:first-child {
+    transition-delay: 3.5s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(11) .ball_number>span>span:nth-child(2) {
+    transition-delay: 6s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(11) .ball_point span {
+    transition-delay: 8s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(12) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(12) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(12) .ball_number>span {
+    transition-delay: 3.3s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(12) .ball_number>span>span:first-child {
+    transition-delay: 3.8s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(12) .ball_number>span>span:nth-child(2) {
+    transition-delay: 6.3s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(12) .ball_point span {
+    transition-delay: 8.3s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(13) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(13) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(13) .ball_number>span {
+    transition-delay: 3.6s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(13) .ball_number>span>span:first-child {
+    transition-delay: 4.1s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(13) .ball_number>span>span:nth-child(2) {
+    transition-delay: 6.6s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(13) .ball_point span {
+    transition-delay: 8.6s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(14) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(14) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(14) .ball_number>span {
+    transition-delay: 3.9s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(14) .ball_number>span>span:first-child {
+    transition-delay: 4.4s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(14) .ball_number>span>span:nth-child(2) {
+    transition-delay: 6.9s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(14) .ball_point span {
+    transition-delay: 8.9s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(15) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(15) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(15) .ball_number>span {
+    transition-delay: 4.2s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(15) .ball_number>span>span:first-child {
+    transition-delay: 4.7s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(15) .ball_number>span>span:nth-child(2) {
+    transition-delay: 7.2s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(15) .ball_point span {
+    transition-delay: 9.2s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(16) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(16) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(16) .ball_number>span {
+    transition-delay: 4.5s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(16) .ball_number>span>span:first-child {
+    transition-delay: 5s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(16) .ball_number>span>span:nth-child(2) {
+    transition-delay: 7.5s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(16) .ball_point span {
+    transition-delay: 9.5s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(17) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(17) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(17) .ball_number>span {
+    transition-delay: 4.8s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(17) .ball_number>span>span:first-child {
+    transition-delay: 5.3s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(17) .ball_number>span>span:nth-child(2) {
+    transition-delay: 7.8s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(17) .ball_point span {
+    transition-delay: 9.8s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(18) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(18) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(18) .ball_number>span {
+    transition-delay: 5.1s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(18) .ball_number>span>span:first-child {
+    transition-delay: 5.6s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(18) .ball_number>span>span:nth-child(2) {
+    transition-delay: 8.1s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(18) .ball_point span {
+    transition-delay: 10.1s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(19) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(19) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(19) .ball_number>span {
+    transition-delay: 5.4s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(19) .ball_number>span>span:first-child {
+    transition-delay: 5.9s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(19) .ball_number>span>span:nth-child(2) {
+    transition-delay: 8.4s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(19) .ball_point span {
+    transition-delay: 10.4s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(20) .ball_number:after,
+.gameBlock .tableList_item:not([loading]):nth-child(20) .ball_number:before,
+.gameBlock .tableList_item:not([loading]):nth-child(20) .ball_number>span {
+    transition-delay: 5.7s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(20) .ball_number>span>span:first-child {
+    transition-delay: 6.2s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(20) .ball_number>span>span:nth-child(2) {
+    transition-delay: 8.7s
+}
+
+.gameBlock .tableList_item:not([loading]):nth-child(20) .ball_point span {
+    transition-delay: 10.7s
+}
+
+.gameBlock .tableList_item[loading] .ball_area:after,
+.gameBlock .tableList_item[loading] .ball_area:before {
+    opacity: 1
+}
+
+.gameBlock .tableList_item[loading] .ball_number:after,
+.gameBlock .tableList_item[loading] .ball_number:before {
+    transform: translate(-50%, -40%) scale(.5)
+}
+
+.gameBlock .tableList_item[loading] .ball_number>span {
+    transform: translate(-50%, -30%)
+}
+
+.gameBlock .tableList_item[loading] .ball_number>span>span:first-child {
+    opacity: 0;
+    transform: translateY(-100%)
+}
+
+.gameBlock .tableList_item[loading] .ball_number>span>span:nth-child(2) {
+    opacity: 0;
+    transform: translateY(100%)
+}
+
+.gameBlock .tableList_item[loading] .ball_point span {
+    opacity: 0;
+    transform: scale(2)
+}
+
+.gameBlock .tableList_item[loading] .ball_number,
+.gameBlock .tableList_item[loading] .ball_point {
+    transition-delay: 0;
+    opacity: 0
+}
+
+.gameBlock .tableList_item[loading] .ball_number:after,
+.gameBlock .tableList_item[loading] .ball_number:before,
+.gameBlock .tableList_item[loading] .ball_number span,
+.gameBlock .tableList_item[loading] .ball_point:after,
+.gameBlock .tableList_item[loading] .ball_point:before,
+.gameBlock .tableList_item[loading] .ball_point span {
+    opacity: 0
+}
+
+@media (max-width:800px) and (orientation:portrait) {
+    .gameBlock .topBlock {
+        flex-wrap: wrap;
+        line-height: 1
+    }
+
+    .gameBlock .leftBlock,
+    .gameBlock .rightBlock {
+        flex: 1;
+        min-width: 90px;
+        font-size: 12px
+    }
+
+    .gameBlock .leftBlock .blockContent,
+    .gameBlock .rightBlock .blockContent {
+        min-height: 150px
+    }
+
+    .gameBlock .leftBlock .blockContent p,
+    .gameBlock .rightBlock .blockContent p {
+        line-height: 1.3;
+        margin-bottom: 3px
+    }
+
+    .gameBlock .leftBlock .button-orange,
+    .gameBlock .rightBlock .button-orange {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .gameBlock .centerBlock {
+        width: 38vw;
+        max-width: calc(100vw - 190px);
+        min-width: 150px;
+        flex: auto
+    }
+
+    .gameBlock .bonusInfo {
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+        transform: translateY(-1.5em)
+    }
+
+    .gameBlock .bonusInfo[active] {
+        position: relative;
+        background: rgba(0, 0, 0, .85);
+        padding: 5px 1em
+    }
+
+    .gameBlock .countdownBlock {
+        height: 100px;
+        background-position: top;
+        margin-bottom: -30px
+    }
+
+    .gameBlock .bonusBlock {
+        height: 110px;
+        padding-top: 20px;
+        background-size: auto 120%;
+        margin-bottom: 0
+    }
+
+    .gameBlock .bonusBlock .point {
+        padding: 3px;
+        font-size: 12px;
+        line-height: 1.2
+    }
+
+    .gameBlock .bonusBlock .point span {
+        padding-left: 5px;
+        padding-right: 5px
+    }
+}
+
+@media (max-width:800px) and (orientation:portrait) {
+    .gameBlock .pointBlock {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        letter-spacing: 1;
+        font-size: 10px
+    }
+
+    .gameBlock .bottomBlock {
+        margin-top: 0
+    }
+
+    .gameBlock .ball_area {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0
+    }
+
+    .gameBlock .ball_number>span {
+        transform: translate(-50%, -56%)
+    }
+
+    .gameBlock .ball_number span {
+        font-size: 1.5rem;
+        color: #fff;
+        text-shadow: 1px 1px 3px #000
+    }
+
+    .gameBlock .ball_number:after,
+    .gameBlock .ball_number:before {
+        opacity: 0
+    }
+
+    .gameBlock .tableList {
+        margin-top: 0
+    }
+
+    .gameBlock .tableList .space_chair {
+        padding-bottom: 100%
+    }
+
+    .gameBlock .tableList_item {
+        margin-bottom: 10px
+    }
+
+    .gameBlock .tableList .space_chair[banker=true],
+    .gameBlock .tableList .space_chair[checked=checked],
+    .gameBlock .tableList .space_chair[other=true],
+    .gameBlock .tableList .space_checkbox:checked+.space_chair {
+        letter-spacing: 0;
+        font-size: 10px
+    }
+
+    .gameBlock .tableList .space_chair[banker=true]:before,
+    .gameBlock .tableList .space_chair[checked=checked]:before,
+    .gameBlock .tableList .space_chair[other=true]:before,
+    .gameBlock .tableList .space_checkbox:checked+.space_chair:before {
+        border: 1px solid #fff
+    }
+	.blockTitle {
+		font-size: 0.9em!important;
+		padding: 2px;
+	}
+
+}
+
+.bingoHistory {
+    margin-bottom: 2em
+}
+
+.openVideo {
+    width: 200px;
+    max-width: 90%;
+    margin: auto;
+    border: 3px solid #999;
+    box-shadow: 0 0 30px #333;
+    border-radius: 100%
+}
+.openVideo,
+.openVideo_iframe {
+    overflow: hidden;
+    position: relative
+}
+
+.openVideo_iframe {
+    padding-bottom: 100%;
+    border-radius: 100%;
+    z-index: 1
+}
+
+.openVideo video {
+    z-index: 0;
+    position: absolute;
+    top: 45%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    width: 254%;
+    height: 240%
+}
+
+/*現在莊家名稱*/
+#Now_Banker_Name
+{
+	color:#FFF;
+	padding:1px 0;
+	margin:1px 0;
+}
+
+.Now_Banker_Name_Span
+{
+	background-color:#FF0;
+	color:#000;
+	display:block;
+}
+

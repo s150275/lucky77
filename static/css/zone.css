@@ -1,0 +1,32 @@
+.zoneList ul {
+    list-style: none;
+    padding: 0
+}
+
+.zoneList .list_item {
+    text-align: center
+}
+
+.zoneList .list_link {
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    line-height: 3;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    border: 2px solid #fff;
+    color: hsla(0, 0%, 100%, .8);
+    background-color: rgba(251, 176, 59, 0);
+    margin-bottom: 2em;
+    width: 400px;
+    max-width: 100%
+}
+
+.zoneList .list_link:hover {
+    background-image: linear-gradient(180deg, #f7931e, #fcee21 22%, #fbb03b);
+    color: #000;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .7);
+    transform: translate(-3px, -3px)
+}

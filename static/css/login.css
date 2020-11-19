@@ -1,0 +1,99 @@
+.loginForm {
+    text-align: center;
+    width: 400px;
+    max-width: 100%;
+    margin: auto
+}
+
+.loginForm form {
+    border: 3px solid rgba(185, 0, 0, .5);
+    background: rgba(0, 0, 0, .4);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    padding: 80px 2em 2em;
+    margin-top: -80px;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.loginForm .formItem {
+    display: flex;
+    height: 40px
+}
+
+.loginForm .formItem:not(:last-child) {
+    margin-bottom: 1.5em
+}
+
+.loginForm .formItem label {
+    font-size: 1.5rem;
+    flex: 0 0 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fcee21;
+    margin-right: 10px
+}
+
+.loginForm .formItem div {
+    flex: auto;
+    text-align: left
+}
+
+.loginForm .button,
+.loginForm button,
+.loginForm input[type=password],
+.loginForm input[type=text] {
+    width: 100%;
+    height: 100%;
+    padding-left: .5em;
+    padding-right: .5em;
+    font-size: 1.3em;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: none;
+    letter-spacing: 2px
+}
+
+.loginForm input.short {
+    flex: 1 1 200px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 1em
+}
+
+.loginForm .button,
+.loginForm button {
+    background: #b90000;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s
+}
+
+.loginForm .button:hover,
+.loginForm button:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    color: #fcee21
+}
+
+.login-logo {
+    max-height: 40vh;
+    max-width: 90%
+}
+
+.captchaItem {
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.captchaImage {
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    height: 40px
+}
+
+.captchaImage img {
+    width: 100%;
+    height: 100%
+}

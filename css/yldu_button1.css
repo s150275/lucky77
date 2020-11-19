@@ -1,0 +1,348 @@
+@charset "utf-8";
+
+/*
+用法:
+載入本CSS檔
+<link href="/css/yldu_button1.css" rel="stylesheet">
+
+按鈕1用法說明
+
+加入類別
+ class="yldu_button1 orange1"
+
+範例-設定按鈕,顏色
+<a class="yldu_button1 orange1" href="">Button</a>
+
+class說明:
+
+yldu_button1 blue1		藍色	yldu_button1 orange1	橘色
+yldu_button1 green1		綠色	yldu_button1 white1		白色
+
+按鈕2用法說明
+
+加入類別
+ class="YB2 YB2_large YB2_regular YB2_red"
+
+範例-設定按鈕,大小,型狀,顏色
+<a class="YB2 YB2_large YB2_regular YB2_red" href="">Button</a>
+
+class說明:
+
+// 大小
+YB2_large	大型	YB2_medium	中型	YB2_small	小型
+
+// 型狀
+YB2_regular	正常	YB2_square	正方形	YB2_round	圓形
+
+// 顏色
+YB2_red		紅色	YB2_orange	橘色	YB2_yellow	黃色
+YB2_green	綠色	YB2_blue	藍色	YB2_purple	粉紅色
+YB2_white	白色	YB2_grey	灰色	YB2_black	黑色
+*/
+
+/*
+加入類別
+ class="yldu_button1 orange1"
+
+yldu_button1 blue1		加入資訊
+yldu_button1 orange1	刪除資料
+yldu_button1 green1		修改資料
+yldu_button1 white1		查詢資料
+
+*/
+.yldu_button1 {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 16px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.yldu_button1:hover {
+	text-decoration: none;
+}
+.yldu_button1:active {
+	position: relative;
+	top: 1px;
+}
+.bigrounded1 {
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+.medium1 {
+	font-size: 12px;
+	padding: .4em 1.5em .42em;
+}
+.small1 {
+	font-size: 11px;
+	padding: .2em 1em .275em;
+}
+
+
+/* blue */
+.blue1 {
+	color: #d9eef7;
+	border: solid 1px #0076a3;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+.blue1:hover {
+	background: #007ead;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+}
+.blue1:active {
+	color: #80bed6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+	background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
+}
+
+/* green */
+.green1 {
+	color: #e8f0de;
+	border: solid 1px #538312;
+	background: #64991e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
+	background: -moz-linear-gradient(top,  #7db72f,  #4e7d0e);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
+}
+.green1:hover {
+	background: #538018;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6b9d28), to(#436b0c));
+	background: -moz-linear-gradient(top,  #6b9d28,  #436b0c);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#6b9d28', endColorstr='#436b0c');
+}
+.green1:active {
+	color: #a9c08c;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4e7d0e), to(#7db72f));
+	background: -moz-linear-gradient(top,  #4e7d0e,  #7db72f);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e7d0e', endColorstr='#7db72f');
+}
+
+/* white */
+.white1 {
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+.white1:hover {
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+}
+.white1:active {
+	color: #999;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
+	background: -moz-linear-gradient(top,  #ededed,  #fff);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+}
+
+/* orange */
+.orange1 {
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.orange1:hover {
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.orange1:active {
+	color: #fcd3a5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+
+
+/*
+用法:
+載入本CSS檔
+<link href="/css/yldu_button1.css" rel="stylesheet">
+加入類別
+ class="YB2 YB2_large YB2_regular YB2_red"
+
+範例-設定按鈕,大小,型狀,顏色
+<a class="YB2 YB2_large YB2_regular YB2_red" href="">Button</a>
+
+class說明:
+
+// 大小
+YB2_large	大型	YB2_medium	中型	YB2_small	小型
+
+// 型狀
+YB2_regular	正常	YB2_square	正方形	YB2_round	圓形
+
+// 顏色
+YB2_red		紅色	YB2_orange	橘色	YB2_yellow	黃色
+YB2_green	綠色	YB2_blue	藍色	YB2_purple	粉紅色
+YB2_white	白色	YB2_grey	灰色	YB2_black	黑色
+
+*/
+
+/*按鈕的通用CSS樣式*/
+/*.button*/
+.YB2
+{
+	background-color: #999;
+	background-image: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+	background-image:    -moz-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+	background-image:     -ms-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+	background-image:      -o-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+	background-image:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+	border: none;
+	border-radius: .5em;
+	box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.2),
+				inset 0 2px 0 hsla(0,0%,100%,.1),
+				inset 0 1.2em 0 hsla(0,0%,100%,0.1),
+				inset 0 -.2em 0 hsla(0,0%,100%,.1),
+				inset 0 -.25em 0 hsla(0,0%,0%,.25),
+				0 .25em .25em hsla(0,0%,0%,.05);
+	color: #444;
+	cursor: pointer;
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1.5;
+	margin: 0 .5em 1em;
+	padding: .5em 1.5em .75em;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+	vertical-align: middle;
+}
+
+.YB2:hover
+{
+	outline: none;
+}
+
+.YB2:hover,.YB2:focus
+{
+	box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.2),
+				inset 0 2px 0 hsla(0,0%,100%,.1),
+				inset 0 1.2em 0 hsla(0,0%,100%,.1),
+				inset 0 -.2em 0 hsla(0,0%,100%,.1),
+				inset 0 -.25em 0 hsla(0,0%,0%,.25),
+				inset 0 0 0 3em hsla(0,0%,100%,.2),
+				0 .25em .25em hsla(0,0%,0%,.05);
+}
+
+.YB2:active
+{
+	box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.2),
+				inset 0 2px 0 hsla(0,0%,100%,.1),
+				inset 0 1.2em 0 hsla(0,0%,100%,.1),
+				inset 0 0 0 3em hsla(0,0%,100%,.2),
+				inset 0 .25em .5em hsla(0,0%,0%,.05),
+				0 -1px 1px hsla(0,0%,0%,.1),
+				0 1px 1px hsla(0,0%,100%,.25);
+	margin-top: .25em;
+	outline: none;
+	padding-bottom: .5em;
+}
+
+/*按鈕上的文字樣式*/
+.YB2_lightText
+{
+	box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+				inset 0 2px 0 hsla(0,0%,100%,.1),
+				inset 0 1.2em 0 hsla(0,0%,100%,.05),
+				inset 0 -.2em 0 hsla(0,0%,100%,.1),
+				inset 0 -.25em 0 hsla(0,0%,0%,.5),
+				0 .25em .25em hsla(0,0%,0%,.1);
+	color: #fff;
+	text-shadow: 0 -1px 1px hsla(0,0%,0%,.25);
+}
+
+.YB2_lightText:hover,.lightText:focus
+{
+	box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+				inset 0 2px 0 hsla(0,0%,100%,.1),
+				inset 0 1.2em 0 hsla(0,0%,100%,.05),
+				inset 0 -.2em 0 hsla(0,0%,100%,.1),
+				inset 0 -.25em 0 hsla(0,0%,0%,.5),
+				inset 0 0 0 3em hsla(0,0%,100%,.2),
+				0 .25em .25em hsla(0,0%,0%,.1);
+}
+
+.YB2_lightText:active
+{
+	box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+				inset 0 2px 0 hsla(0,0%,100%,.1),
+				inset 0 1.2em 0 hsla(0,0%,100%,.05),
+				inset 0 0 0 3em hsla(0,0%,100%,.2),
+				inset 0 .25em .5em hsla(0,0%,0%,.05),
+				0 -1px 1px hsla(0,0%,0%,.1),
+				0 1px 1px hsla(0,0%,100%,.25);
+}        
+
+/*按鈕的各種尺寸，圓角和顏色的CSS樣式*/
+/* Large大型 */
+.YB2_large {font-size: 1.25em;}
+
+/* Medium中型 */
+.YB2_medium {font-size: 1em;}
+
+/* Small小型 */
+.YB2_small {font-size: .75em;}
+
+/* Regular正常 */
+.YB2_regular {border-radius: .5em;}
+
+/* Square正方形 */
+.YB2_square {border-radius: .25em;}
+
+/* Round圓形 */
+.YB2_round {border-radius: 1.25em;}
+
+/* Red紅色 */
+.YB2_red {background-color: #ff6c6f;}
+
+/* Orange橘色 */
+.YB2_orange {background-color: #f6cf6f;}
+
+/* Yellow黃色 */
+.YB2_yellow {background-color: #fff6c6;}
+
+/* Green綠色 */
+.YB2_green {background-color: #6fcf6f;}
+
+/* Blue藍色 */
+.YB2_blue {background-color: #6fc6ff;}
+
+/* Purple粉紅色 */
+.YB2_purple {background-color: #f6c6ff;}
+
+/* White白色 */
+.YB2_white {background-color: #eee;}
+
+/* Grey灰色 */
+.YB2_grey {background-color: #999;}
+
+/* Black黑色 */
+.YB2_black {background-color: #444;}
+

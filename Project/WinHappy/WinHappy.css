@@ -1,0 +1,115 @@
+@charset "utf-8";
+/*設定連結*/
+#htmlbotton a
+{
+	display:inline-block;
+}
+
+/*設定內定按扭*/
+.btn-default
+{
+	padding:5px 10px!important;
+	border:1px solid #aaa;
+	margin:0 2px;
+}
+
+/*標注下注的中獎奬號*/
+.WinHappy_Match_Num
+{
+	color:#f00;
+}
+
+/*投注球號-等別色*/
+.WinHappy_Bet_Ball_List_Green
+{
+	color:#008000;
+}
+
+/*金額正負CSS*/
+/*前台正值*/
+.WinHappy_Positive_Before
+{
+	color:#64e664!important;
+}
+/*前台負值*/
+.WinHappy_Negative_Before
+{
+	color:#F00!important;
+}
+/*後台正值*/
+.WinHappy_Positive_After
+{
+	color:#006600!important;
+}
+/*後台負值*/
+.WinHappy_Negative_After
+{
+	color:#F00!important;
+}
+
+/*五星彩獎金池*/
+#WinHappy_5Start_BonusPool
+{
+	position:absolute;
+	top:40px;
+	left:135px;
+
+	color:#f00;
+	font-size:26px;
+}
+/*總彩金獎金池*/
+#WinHappy_All_BonusPool
+{
+	position:absolute;
+	top:115px;
+	left:135px;
+	color:#f00;
+	font-size:26px;
+}
+/*手機用*/
+#html a
+{
+	color:#fff;
+}
+
+/*LOG系統*/
+table.WinHappy_TB_COLLAPSE {
+  width:100%;
+  /*border-collapse:collapse;*/
+  border-collapse:separate; /*邊框沒有合併*/
+}
+table.WinHappy_TB_COLLAPSE caption {
+  padding:10px;
+  font-size:24px;
+  background-color:#f3f6f9;
+}
+table.WinHappy_TB_COLLAPSE thead th {
+  padding:5px 0px;
+  color:#fff;
+  background-color:#915957;
+}
+table.WinHappy_TB_COLLAPSE tbody td {
+  padding:5px 0px;
+  color:#555;
+  text-align:center;
+  background-color:#fff;
+  border-bottom:1px solid #915957;
+}
+table.WinHappy_TB_COLLAPSE tfoot td {
+  padding:5px 0px;
+  text-align:center;
+  background-color:#d6d6a5;
+}
+
+@media screen and (min-width: 1200px)
+{
+}
+@media screen and (min-width: 768px) and (max-width: 979px)
+{
+}
+@media screen and (max-width: 767px)
+{
+}
+@media screen and (max-device-width: 480px)
+{
+}

@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*基本功能*/
+.yldu_put_center , .YCenter{
+	text-align:center!important;
+}
+.yldu_put_left , .YLeft{
+	text-align:left!important;
+}
+.yldu_put_right , .YRight{
+	text-align:right!important;
+}
+.yldu_put_top , .YTop{
+	vertical-align:text-top!important;	
+}
+.yldu_put_bottom , .YBottom{
+	vertical-align:bottom!important;
+}
+.yldu_put_middle , .YMiddle
+{
+	vertical-align:middle!important;
+}
+.yldu_must_input{
+	color:#f00!important;
+}
+/*設定各種字體大小的類別*/
+.yldu_font12 , .YFont12 , .YF12{
+	font-size:12px!important;
+}
+.yldu_font14 , .YFont14 , .YF14{
+	font-size:14px!important;
+}
+.yldu_font16 , .YFont16 , .YF16{
+	font-size:16px!important;
+}
+.yldu_font18 , .YFont18 , .YF18{
+	font-size:18px!important;
+}
+.yldu_font20 , .YFont20 , .YF20{
+	font-size:20px!important;
+}
+.YFont22 , .YF22{
+	font-size:22px!important;
+}
+/*設定文字頻色的類別*/
+.yldu_color_red , .YRed{
+	color:#f00!important;
+}
+.yldu_color_blue , .YBlue{
+	color:#00f!important;
+}
+.yldu_color_while , .YWhile{
+	color:#fff!important;
+}
+.yldu_color_black , .YBlack{
+	color:#000!important;
+}
+
+/*設定各種外框的類別*/
+.yldu_border_1red , .YBorderRed1{
+	border:1px solid #F00!important;
+}
+.yldu_border_1blue , .YBorderBlue1{
+	border:1px solid #00F!important;
+}
+.yldu_border_1black , .YBorderBlack1{
+	border:1px solid #000!important;
+}
+.yldu_border_bottom_1black , .YBorderBBlack1{
+	border-bottom:1px solid #000!important;
+}
+.yldu_border_top_1black , .YBorderTBlack1{
+	border-top:1px solid #000!important;
+}
+.yldu_border_top_bottom_1black , .YBorderTBBlack1{
+	border-top:1px solid #000;
+	border-bottom:1px solid #000!important;
+}
+
+/*設定各種paddinf和margin的類別*/
+.yldu_margin0 , .YMargin0{
+	margin:0px!important;
+}
+.yldu_margin10 , .YMargin10{
+	margin:10px!important;
+}
+.yldu_margin20 , .YMargin20{
+	margin:20px!important;
+}
+
+.yldu_margin_topbottom10 , .YMarginTB0{
+	margin:10px 0px!important;
+}
+.yldu_margin_topbottom20 , .YMarginTB20{
+	margin:20px 0px!important;
+}
+
+.yldu_padding0 , .YPadding0{
+	padding:0px!important;
+}
+.yldu_padding2 , .YPadding2{
+	padding:2px!important;
+}
+.yldu_padding10 , .YPadding10{
+	padding:10px!important;
+}
+.yldu_padding20 , .YPadding20{
+	padding:20px!important;
+}
+
+.yldu_padding_TB10 , .YPaddingTB10{
+	padding:10px 0px!important;
+}
+
+.yldu_padding_TB20 , .YPaddingTB20{
+	padding:20px 0px!important;
+}
+
+.yldu_padding_LR10 , .YPaddingLR10{
+	padding:0 10px!important;
+}
+
+.yldu_padding_LR20 , .YPaddingLR20{
+	padding:0 20px!important;
+}
+
+.yldu_padding_topbottom10 , .YPaddingTB10{
+	padding:10px 0px!important;
+}
+.yldu_padding_topbottom20 , .YPaddingTB20{
+	padding:20px 0px!important;
+}
+
+.yldu_margin_top20 , .YMarginT20{
+	margin-top:20px!important;
+}
+.yldu_margin_left20 , .YMarginL20{
+	margin-left:20px!important;
+}
+.yldu_margin_bottom20 , .YMarginB20{
+	margin-bottom:20px!important;
+}
+.yldu_margin_right20 , .YMarginR20{
+	margin-right:20px!important;
+}
+
+.yldu_margin_top10 , .YMarginT10{
+	margin-top:10px!important;
+}
+.yldu_margin_left10 , .YMarginL10{
+	margin-left:10px!important;
+}
+.yldu_margin_bottom10 , .YMarginB10{
+	margin-bottom:10px!important;
+}
+.yldu_margin_right10 , .YMarginR10{
+	margin-right:10px!important;
+}
+
+.yldu_padding_top20 , .YPaddingT20{
+	padding-top:20px!important;
+}
+.yldu_padding_left20 , .YPaddingL20{
+	padding-left:20px!important;
+}
+.yldu_padding_bottom20 , .YPaddingB20{
+	padding-bottom:20px!important;
+}
+.yldu_padding_right20 , .YPaddingR20{
+	padding-right:20px!important;
+}
+.yldu_padding_left_right10 , .YPaddingLR10{
+	padding:0px 10px!important;
+}
+.yldu_padding_top_bottom10 , .YPaddingTB10{
+	padding:10px 0px!important;
+}
+
+
+.yldu_padding_top10 , .YPaddingT10{
+	padding-top:10px!important;
+}
+.yldu_padding_left10 , .YPaddingL10{
+	padding-left:10px!important;
+}
+.yldu_padding_bottom10 , .YPaddingB10{
+	padding-bottom:10px!important;
+}
+.yldu_padding_right10 , .YPaddingR10{
+	padding-right:10px!important;
+}
+/*設寛度*/
+.yldu_width100 , .YW100{
+	width:100%!important;
+}
+.yldu_width90 , .YW90{
+	width:90%!important;
+}
+.yldu_width80 , .YW80{
+	width:80%!important;
+}
+.yldu_width75 , .YW75{
+	width:75%!important;
+}
+.yldu_width70 , .YW70{
+	width:70%!important;
+}
+.yldu_width50 , .YW50{
+	width:50%!important;
+}
+/*設高度*/
+.yldu_height10 , .YH10{
+	height:10px!important;
+}
+.yldu_height20 , .YH20{
+	height:20px!important;
+}
+.yldu_height30 , .YH30{
+	height:30px!important;
+}
+/*設定block*/
+.yldu_block , .YB{
+	display:block!important;
+}
+
+/*卡片樣式*/
+.yldu_cart , .YCart
+{
+	border:2px solid #666!important;
+	padding:10px;
+	margin:2px;
+	border-radius:10px;
+}
+
+/*hr樣式*/
+.yldu_hr_Orange , .YHrO
+{
+	color: #FF8C00;
+	background-color: #FF8C00;
+	height: 5px;
+}
+
+/*按鈕*/
+.3D_BTN_g_g_b
+{
+    BORDER-RIGHT: #7B9EBD 1px solid; PADDING-RIGHT: 2px;
+    BORDER-TOP: #7B9EBD 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+    BORDER-LEFT: #7B9EBD 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7B9EBD 1px solid
+}
+
+.3D_BTN_G_G_b_mouseout
+{
+     BORDER-RIGHT: #7EBF4F 1px solid; PADDING-RIGHT: 2px;
+     BORDER-TOP: #7EBF4F 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px;
+     FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#B3D997);
+     BORDER-LEFT: #7EBF4F 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7EBF4F 1px solid
+}
+
+.3D_BTN_G_G_b_mouseover
+{
+     BORDER-RIGHT: #7EBF4F 1px solid; PADDING-RIGHT: 2px;
+     BORDER-TOP: #7EBF4F 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px;
+     FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#CAE4B6);
+     BORDER-LEFT: #7EBF4F 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7EBF4F 1px solid
+}
+
+.BUTTON_N_Y_b
+{
+	padding: 4px;
+	font-size:16px;
+	height:24px;
+	background-color:#6FC;
+}
+
+.3D_BTN_g_B_b_mouseout
+{
+    BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px;
+    BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+    BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid
+}
+
+.3D_BTN_g_B_b_mouseover
+{
+    BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px;
+    BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA);
+    BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid
+}
+
+.3D_BTN_g_B_b_mousedown
+{
+    BORDER-RIGHT: #FFE400 1px solid; PADDING-RIGHT: 2px;
+    BORDER-TOP: #FFE400 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+    BORDER-LEFT: #FFE400 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #FFE400 1px solid
+}
+.3D_BTN_g_B_b_mouseup
+{
+    BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px;
+    BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+    BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid
+}
+
+.3D_BTN_g_B_b
+{
+    BORDER-RIGHT: #002D96 1px solid; PADDING-RIGHT: 2px;
+    BORDER-TOP: #002D96 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#9DBCEA);
+    BORDER-LEFT: #002D96 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #002D96 1px solid
+}
+
+/*背景色*/
+.yldu_BG1{
+	background-color:blue;
+}
+
+/*圖角設定*/
+.yldu_input_border_radius , .YRadius5
+{
+	border-radius:50px;
+}
+
+.yldu_input_border_radius , .YRadius10
+{
+	border-radius:10px;
+}
+
+.yldu_input_border_radius , .YRadius20
+{
+	border-radius:20px;
+}
+
+/* 物件圖形外層 */
+.Img_Div_Center
+{
+    min-height:250px
+	/*width: 600px;
+    height: 450px;*/
+    overflow: hidden;
+    display: block;
+    background-color: #e5e5e5;
+    line-height: 200px;
+    text-align: center;
+    position: relative;
+}
+/* 物件圖形 */
+.Img_Center
+{
+	display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    /*max-height: 100%;*/
+	max-height:250px;
+	/*margin:0 auto;*/
+}

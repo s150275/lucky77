@@ -1,0 +1,44 @@
+1.先上傳檔案-captcha.php
+/includes/captcha/
+
+2.在需顯示驗證碼的地方加入程式(檔案-captcha.php路徑要改成實際路徑)
+include"" ;
+
+<script>
+function refresh_code(){ 
+	document.getElementById("imgcode").src="captcha.php"; 
+} 
+</script>
+
+<input name="checkword" type="text" class="form-control" id="checkword" placeholder="checkword" required>
+<p>請輸入下圖字樣：</p>
+<p><img id="imgcode" src="captcha.php" onclick="refresh_code()" /><br />
+點擊圖片可以更換驗證碼
+</p>
+
+3.送出後驗證所收到的資料是否正確
+if(!isset($_SESSION))
+{
+	session_start();
+}  //判斷session是否已啟動
+
+if((!empty($_SESSION['check_word'])) && (!empty($_POST['checkword'])))  //判斷此兩個變數是否為空
+{
+	// 要管大小寫
+//	if($_SESSION['check_word'] == $_POST['checkword']){
+	// 不管大小寫
+	if( strtolower($_SESSION['check_word']) == strtolower($_POST['checkword']) )
+	{
+		$_SESSION['check_word'] = ''; //比對正確後，清空將check_word值
+		header('content-Type: text/html; charset=utf-8');
+
+		echo '<p> </p><p> </p><a href="./chptcha_index.php">OK輸入正確，將於一秒後跳轉(按此也可返回)</a>';
+		echo '<meta http-equiv="refresh" content="1; url=./captcha_index.php">';
+		exit();
+	}
+	else
+	{
+		echo '<p> </p><p> </p><a href="./chptcha_index.php">Error輸入錯誤，將於一秒後跳轉(按此也可返回)</a>';
+		echo '<meta http-equiv="refresh" content="1; url=./captcha_index.php">';
+	}
+}

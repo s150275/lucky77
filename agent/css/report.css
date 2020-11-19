@@ -1,0 +1,51 @@
+/********報表按鈕修改*******/
+.date-set-nav,.report-game-type-nav{ box-sizing: border-box; padding: 10px;}
+.date-set-nav:after,.report-game-type-nav:after{ content: ''; display: block; clear: both;}
+.date-set-nav span{
+    display: inline-block;
+    padding: 10px 25px 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    background-color: #cf2525;
+    margin-right: 10px;
+    font-weight: 600;
+}
+.date-set-nav span:hover{
+    background-color: #e62727;
+}
+.date-set-nav span:nth-child(even){
+    margin-right: 50px;
+}
+
+.report-game-type-nav a{ text-decoration: none; display: block; width: 42px; height: 40px; float: left; margin:0 5px 5px 0;
+    text-align: center; padding:4px 4px 4px 6px; text-align: center;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+    background-color: #2575cf;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+.report-game-type-nav a:hover{ background-color: #2981e4;}
+.report-game-type-nav a.allbet{ width: 50px;}
+.report-game-type-nav a:after{ content: ''; display: inline-block; width: 0%; height: 100%; vertical-align: middle;}
+.report-game-type-nav a span{ font-size: 12px; display: inline-block; vertical-align: middle; color: #FFF;}
+.report-game-type-nav a.active{
+    background-color: #749a02;
+}
+.report-game-type-nav a.active:hover{
+    background-color: #91bd09;
+}

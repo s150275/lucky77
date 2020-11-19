@@ -1,0 +1,100 @@
+<?php
+// ############ ########## ########## ############
+// ## 快速請取網頁傳來的參			##
+// ############ ########## ########## ############
+// 程式功能 : 把要設定的網頁參數用陣列設定,再用副程式把資料載進來
+// 版    本 : V0.2
+// 作    者 : 杜宇龍
+// 修改時間 : 2018/01/06
+// 設定方法 : 無
+// 使用方法 : 
+//	01.先設定要讀取的參數陣列
+// 格式說明
+// 參數一 : 欄位名稱
+// 參數二 : GET和POST欄位設定(*)
+// 參數三 : 新增SQL欄位設定(ADD)
+// 參數四 : 修改SQL欄位設定(MOD)
+// 參數五 : 變數格式(INT)
+// 不用可以設成"-"即可
+//	$ARRAY_POST_GET_PARA[] = "INPUT_FUNCT||*||ADD||MOD||-" ;
+//	$ARRAY_POST_GET_PARA[] = "INPUT_ID||-||ADD||MOD||-" ;
+//	$ARRAY_POST_GET_PARA[] = "INPUT_PAGE||*||-||MOD||INT" ;
+//	$ARRAY_POST_GET_PARA[] = "INPUT_DESC||*||ADD||-||INT" ;
+//
+//	02.先載入副程式
+//	include($MAIN_BASE_ADDRESS . "includes/sub/sub_post_get.sub") ;	// 快速請取網頁傳來的參數
+//
+//	03.再呼叫函式
+//	sub_post_get($ARRAY_POST_GET_PARA) ;
+/// 參數說明 :
+//	第一參數 : 設定的參數陣列
+// 相關檔案 : 無
+// 參考資料 : 無
+// 發現問題 : 無
+// 回傳值   :
+//	$Global_Get ;	// GET用參數
+//	$Global_Post ;	// POST參數(input隱藏欄位)
+//	$Global_ADDSQL ;	// 新增SQL
+//	$Global_MODSQL ;	// 修改SQL
+// 修改記錄 :
+// 180106	加入INT欄位,變數前加(int)
+// 180105	加入新增和修改SQL
+// 180104 	V0.2	把炇前後空格去掉
+// 090909	□加入下傳參數的功能-$Global_Get,$Global_Post
+// 090819	V0.1	□開始編寫程式
+
+function sub_post_get ( $tempArray )
+{
+    global $Global_Get ;
+    global $Global_Post ;
+	global $Global_ADDSQL ;
+	global $Global_MODSQL ;
+    $Global_Get = "" ;
+    $Global_Post = "" ;
+    $Global_ADDSQL = "" ;
+    $Global_MODSQL = "" ;
+	$arrayADDSQL = array();
+	$arrayMODSQL = array();
+
+    for ( $FOR_COUNT=0 ; $FOR_COUNT < sizeof($tempArray) ; $FOR_COUNT++ )
+    {
+        // 分析參數資料(第一欄位為要讀取的參數資料,第二欄位如果設為*,表示要加到固定下傳的參數中$Global_Get,$Global_Post)
+        $split_Para = explode("||" , $tempArray[$FOR_COUNT]) ;
+		//echo "<p></p>" ;print_r($split_Para);echo "<br>" ;
+        $temp_Para = $split_Para[0] ;
+        global ${$temp_Para} ;
+        $_POST[$temp_Para] ?  ${$temp_Para} = trim(addslashes($_POST[$temp_Para])) : ${$temp_Para} = trim(addslashes($_GET[$temp_Para])) ;
+//		${$temp_Para} = trim(${$temp_Para}) ;
+
+        if ( $split_Para[4] == "INT" )
+		{
+			${$temp_Para} = (int)${$temp_Para} ;
+		}
+
+        // 是否要加入到下傳參數中
+        if ( $split_Para[1] == "*" )
+        {
+            $temp_Global_Field = $split_Para[0] ;
+            $Global_Get ? $Global_Get = $Global_Get . "&$temp_Global_Field=${$temp_Global_Field}" : $Global_Get = "$temp_Global_Field=${$temp_Global_Field}" ;
+            $Global_Post = $Global_Post . "<input type=\"hidden\" name=\"$temp_Global_Field\" value=\"${$temp_Global_Field}\" />\n" ;
+        }
+
+        // 是否要加入到新增參數中
+        if ( $split_Para[2] == "ADD" )
+        {
+            $temp_Global_Field = $split_Para[0] ;
+			$arrayADDSQL[] = $split_Para[0] . " = '" . ${$temp_Global_Field} . "'";
+		}
+		$Global_ADDSQL = implode(",", $arrayADDSQL) ;
+
+        // 是否要加入到修改參數中
+        if ( $split_Para[3] == "MOD" )
+        {
+            $temp_Global_Field = $split_Para[0] ;
+			$arrayMODSQL[] = $split_Para[0] . " = '" . ${$temp_Global_Field} . "'";
+		}
+		$Global_MODSQL = implode(",", $arrayMODSQL) ;
+    }
+}
+
+?>
